@@ -1,0 +1,15 @@
+﻿@{
+	ViewData["Title"] = "Deletion Error";
+}
+
+<h2>Deletion Error</h2>
+
+<div class="alert alert-danger" role="alert">
+	The deletion cannot be performed because the location is not empty.
+</div>
+
+<p>
+	There are signalmen associated with this location. Please ensure that the location is empty before attempting to delete it.
+</p>
+
+<a href="@Url.Action("Index", "Locaties")" class="btn btn-primary">Return to List</a>
